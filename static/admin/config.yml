@@ -4,7 +4,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
-# collections:
+collections:
 #   - name: 'ad'
 #     label: 'Ad'
 #     folder: 'content/ad'
