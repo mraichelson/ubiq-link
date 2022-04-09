@@ -2,29 +2,43 @@
   <div
     class="rounded p-2 bg-white border border-slate-400 space-y-2 max-w-[600px]"
   >
-    <div class="flex items-center gap-2 text-slate-500">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-8 w-8"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
-          clip-rule="evenodd"
-        />
-      </svg>
+    <div class="flex items-center gap-4 text-slate-500">
+      <img
+        src="/img/tmp-user.jpg"
+        alt=""
+        width="32"
+        height="32"
+        class="h-12 w-12 object-cover rounded-full border border-slate-500"
+      />
       <div class="text-lg">Q-Cell-is-OK</div>
+      <div class="text-[10px] ml-auto">
+        30 days since last login
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-3 w-3 inline-block ml-1 mb-0.5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </div>
     </div>
     <div
       class="border-t border-b p-2 border-slate-200 -mx-2 space-y-2 text-slate-600"
     >
+      <div class="text-xl">Missing BeeMail delivery</div>
       <p>
         Hi everyone, I'm looking for information about a missing BeeMail
         delivery. The drone was last seen headed east towards Kremlin and I
-        can't find it anywhere. If you have any information, please let me know.
-        Thanks!
+        can't find it anywhere. I tried looking around the last known location
+        and all I found was a bunch of dirtbike tracks. If you have any
+        information, please let me know. Thanks!
       </p>
     </div>
     <div class="flex text-xs text-slate-500 gap-4">

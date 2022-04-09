@@ -3,18 +3,13 @@
     class="rounded p-2 bg-gradient-to-br from-red-600 to-red-800 border border-red-700 space-y-2 max-w-[600px]"
   >
     <div class="flex items-center gap-2 text-white">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-8 w-8"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
-          clip-rule="evenodd"
-        />
-      </svg>
+      <img
+        src="/img/tmp-user.jpg"
+        alt=""
+        width="32"
+        height="32"
+        class="h-12 w-12 object-cover rounded-full border border-red-700"
+      />
       <div class="text-lg">Harold_Carmichael-ESQ</div>
       <div class="ml-auto uppercase text-xs">
         Lifelines
@@ -35,12 +30,12 @@
     <div
       class="border-t border-b p-2 border-red-200 bg-red-50 -mx-2 space-y-2 text-slate-600"
     >
-      <div class="font-semibold text-lg">Closure Contract</div>
+      <div class="text-xl">Closure Contract</div>
       <p>
         Looking to hire a group of takers for a closure contract. DM me if
         interested.
       </p>
-      <p><strong>Must have references. Serious inquiries only!</strong></p>
+      <p>Must have references. Serious inquiries only!</p>
     </div>
     <div class="flex text-xs text-red-50 gap-4">
       <div class="flex gap-1 items-center">

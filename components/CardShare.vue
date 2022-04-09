@@ -3,18 +3,13 @@
     class="rounded p-2 bg-white border border-slate-400 space-y-2 max-w-[600px]"
   >
     <div class="flex items-center gap-2 text-slate-500">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-8 w-8"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
-          clip-rule="evenodd"
-        />
-      </svg>
+      <img
+        src="/img/tmp-user.jpg"
+        alt=""
+        width="32"
+        height="32"
+        class="h-12 w-12 object-cover rounded-full border border-slate-500"
+      />
       <div class="text-lg">ivan-u4ia</div>
     </div>
     <div class="border-t p-2 border-slate-200 -mx-2 space-y-2 text-slate-600">
