@@ -4,49 +4,58 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+
 collections:
-#   - name: 'ad'
-#     label: 'Ad'
-#     folder: 'content/ad'
-#     format: 'frontmatter'
-#     create: true
-#     slug: '{{slug}}'
-#     editor:
-#       preview: false
-#     fields:
-#   - name: 'post'
-#     label: 'Post'
-#     folder: 'content/post'
-#     format: 'frontmatter'
-#     create: true
-#     slug: '{{slug}}'
-#     editor:
-#       preview: false
-#     fields:
-#   - name: 'comment'
-#     label: 'Comment'
-#     folder: 'content/comment'
-#     format: 'frontmatter'
-#     create: true
-#     slug: '{{slug}}'
-#     editor:
-#       preview: false
-#     fields:
-#   - name: 'share'
-#     label: 'Share'
-#     folder: 'content/share'
-#     format: 'frontmatter'
-#     create: true
-#     slug: '{{slug}}'
-#     editor:
-#       preview: false
-#     fields:
-#   - name: 'lifelines'
-#     label: 'Lifelines'
-#     folder: 'content/lifelines'
-#     format: 'frontmatter'
-#     create: true
-#     slug: '{{slug}}'
-#     editor:
-#       preview: false
-#     fields:
+  - name: 'post'
+    label: 'Post'
+    folder: 'content/post'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'comment'
+    label: 'Comment'
+    folder: 'content/comment'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'share'
+    label: 'Share'
+    folder: 'content/share'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'lifelines'
+    label: 'Lifelines'
+    folder: 'content/lifelines'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+  - name: 'ad'
+    label: 'Ad'
+    folder: 'content/ad'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
