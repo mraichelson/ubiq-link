@@ -14,9 +14,9 @@ collections:
     slug: '{{slug}}'
     editor:
       preview: false
-      fields:
-        - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Body', name: 'body', widget: 'markdown' }
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'comment'
     label: 'Comment'
     folder: 'content/comment'
@@ -25,9 +25,9 @@ collections:
     slug: '{{slug}}'
     editor:
       preview: false
-      fields:
-        - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Body', name: 'body', widget: 'markdown' }
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'share'
     label: 'Share'
     folder: 'content/share'
@@ -36,9 +36,9 @@ collections:
     slug: '{{slug}}'
     editor:
       preview: false
-      fields:
-        - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Body', name: 'body', widget: 'markdown' }
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'lifelines'
     label: 'Lifelines'
     folder: 'content/lifelines'
@@ -48,6 +48,8 @@ collections:
     editor:
       preview: false
     fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'ad'
     label: 'Ad'
     folder: 'content/ad'
