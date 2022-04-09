@@ -12,7 +12,7 @@
       />
       <div class="text-lg">Q-Cell-is-OK</div>
       <div class="text-[10px] ml-auto">
-        30 days since last login
+        30+ days since last login
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-3 w-3 inline-block ml-1 mb-0.5"

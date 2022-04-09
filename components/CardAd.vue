@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded overflow-hidden bg-white text-slate-600 border border-slate-400 space-y-2 max-w-[600px]"
+    class="rounded overflow-hidden bg-slate-50 text-slate-600 border border-purple-400 space-y-2 max-w-[600px]"
   >
     <img
       src="https://i.picsum.photos/id/1040/600/300.jpg?hmac=OpzuPwLDjpLe_pSNeFi___-s8FkPg0QWQ-4MpqPepQs"
@@ -10,7 +10,7 @@
       class="aspect-[2/1]"
     />
     <div class="p-2 space-y-2">
-      <div class="text-xl font-semibold">It's time to get planting!</div>
+      <div class="text-xl">It's time to get planting!</div>
       <p>
         Looking to keep your garden growing despite the changing climate? Look
         no further than our climate change resistant seeds! Whether it's more
@@ -21,10 +21,10 @@
       </p>
     </div>
     <div
-      class="p-2 border-t border-slate-300 text-xs bg-slate-100 text-slate-400"
+      class="p-2 border-t border-purple-300 text-xs bg-purple-100 text-purple-500"
     >
       <span
-        class="inline-block bg-slate-400 text-slate-200 py-0 px-2 rounded-sm mr-1"
+        class="text-[10px] -top-[1px] relative inline-block bg-purple-400 text-purple-50 py-0 px-2 rounded-sm mr-1"
         >Ad</span
       >
       Biotechnica Holdings, Inc.

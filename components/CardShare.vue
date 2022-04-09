@@ -13,13 +13,14 @@
       <div class="text-lg">ivan-u4ia</div>
     </div>
     <div class="border-t p-2 border-slate-200 -mx-2 space-y-2 text-slate-600">
+      <div class="text-xl">I 🤬 told you!</div>
       <p>
         I told you, I know what I saw and so do other people. It's real, man,
         and the rest of you are jerks for not listening to me sooner.
       </p>
     </div>
     <div
-      class="rounded overflow-hidden border border-slate-400 bg-slate-200 text-slate-500"
+      class="rounded overflow-hidden border border-slate-400 bg-slate-200 text-slate-600"
     >
       <img
         class="block aspect-[2/1]"
