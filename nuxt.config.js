@@ -1,7 +1,7 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  modern: process.env.NODE_ENV === 'production' ? 'client' : false,
+  // modern: process.env.NODE_ENV === 'production' ? 'client' : false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
