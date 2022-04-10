@@ -30,7 +30,7 @@ export const actions = {
       share.type = 'share'
       content.push(share)
     })
-    content.sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1))
+    content.sort((a, b) => (a.sorting < b.sorting ? 1 : -1))
     commit('content/addContent', content)
 
     /**
@@ -42,7 +42,7 @@ export const actions = {
      * Put ADS in their separate store
      */
     const ads = await context.$content('ad').fetch()
-    ads.sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1))
+    ads.sort((a, b) => (a.sorting < b.sorting ? 1 : -1))
     commit('ads/addAds', ads)
   },
 }

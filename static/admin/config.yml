@@ -34,6 +34,14 @@ collections:
       preview: false
     fields:
       - {
+          label: 'Date/time (used for sorting)',
+          name: 'sorting',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          time_format: 'HH:mm',
+          picker_utc: true,
+        }
+      - {
           label: 'Author',
           name: 'author',
           widget: 'relation',
@@ -85,6 +93,14 @@ collections:
       preview: false
     fields:
       - {
+          label: 'Date/time (used for sorting)',
+          name: 'sorting',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          time_format: 'HH:mm',
+          picker_utc: true,
+        }
+      - {
           label: 'Author',
           name: 'author',
           widget: 'relation',
@@ -127,6 +143,14 @@ collections:
     editor:
       preview: false
     fields:
+      - {
+          label: 'Date/time (used for sorting)',
+          name: 'sorting',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          time_format: 'HH:mm',
+          picker_utc: true,
+        }
       - {
           label: 'Author',
           name: 'author',
@@ -177,6 +201,14 @@ collections:
       preview: false
     fields:
       - {
+          label: 'Date/time (used for sorting)',
+          name: 'sorting',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          time_format: 'HH:mm',
+          picker_utc: true,
+        }
+      - {
           label: 'Author',
           name: 'author',
           widget: 'relation',
@@ -218,6 +250,14 @@ collections:
       preview: false
     fields:
       - {
+          label: 'Date/time (used for sorting)',
+          name: 'sorting',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          time_format: 'HH:mm',
+          picker_utc: true,
+        }
+      - {
           label: 'Author',
           name: 'author',
           widget: 'relation',
@@ -258,6 +298,14 @@ collections:
     editor:
       preview: false
     fields:
+      - {
+          label: 'Date/time (used for sorting)',
+          name: 'sorting',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          time_format: 'HH:mm',
+          picker_utc: true,
+        }
       - { label: 'Image', name: 'image', widget: 'image', required: true }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
