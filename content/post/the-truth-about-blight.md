@@ -1,4 +1,5 @@
 ---
+sorting: 2022-04-10T17:12:39.652Z
 author: Moonbeam440Hz
 title: The Truth About Blight
 upvotes: 12
