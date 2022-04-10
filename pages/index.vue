@@ -84,8 +84,9 @@ export default {
   computed: {
     ...mapState('content', ['content']),
     sortedContent() {
-      const tmpContent = this.content
-      return tmpContent.sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1))
+      // const tmpContent = this.content
+      // return tmpContent.sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1))
+      return this.content
     },
   },
   mounted() {
