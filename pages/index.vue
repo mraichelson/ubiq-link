@@ -90,6 +90,9 @@ export default {
     },
   },
   mounted() {
+    this.content.forEach((item) => {
+      console.log(item.createdAt, ' => ', item.title)
+    })
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on('init', (user) => {
         if (!user) {
