@@ -1,5 +1,5 @@
 ---
-sorting: 2022-04-10T17:13:20.918Z
+sorting: 2022-04-08T17:13:20.918Z
 author: Harold_Carmichael-ESQ
 title: Closure Contract
 upvotes: 2
