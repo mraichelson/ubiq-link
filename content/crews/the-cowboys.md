@@ -1,4 +1,5 @@
 ---
+sorting: 2022-04-10T17:13:36.203Z
 author: TRAV-is-travis
 title: The Cowboys
 upvotes: 11
