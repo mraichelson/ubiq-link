@@ -1,4 +1,5 @@
 ---
+sorting: 2022-04-10T17:14:08.423Z
 image: /img/pexels-rodnae-productions-7697638.jpg
 title: Got casualties? Not any more!
 advertiser: Legit Products, LLC
