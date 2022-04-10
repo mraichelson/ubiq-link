@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gradient-to-br from-slate-50 to-slate-200">
     <ubiq-header />
-    <div class="max-w-[600px] mx-auto space-y-4 py-4">
+    <div class="max-w-[600px] mx-auto space-y-4 p-4">
       <template v-for="(item, index) in sortedContent">
         <card-crew v-if="item.type === 'crew'" :content="item" />
         <card-lifeline v-else-if="item.type === 'lifeline'" :content="item" />
