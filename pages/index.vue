@@ -3,7 +3,6 @@
     <ubiq-header />
     <div class="max-w-[600px] mx-auto space-y-4 py-4">
       <template v-for="(item, index) in content">
-        <div>index {{ index }} is a {{ item.type }}</div>
         <card-crew v-if="item.type === 'crew'" :content="item" />
         <card-lifeline v-else-if="item.type === 'lifeline'" :content="item" />
         <card-post v-else-if="item.type === 'post'" :content="item" />
@@ -15,7 +14,7 @@
       </template>
     </div>
     <footer
-      class="text-xs text-center border-t border-slate-400 p-4 text-slate-500 bg-slate-100 leading-6"
+      class="text-xs text-center border-t border-slate-400 p-4 mt-8 text-slate-500 bg-slate-100 leading-6"
     >
       <a
         href="http://redmarketsrpg.com"
