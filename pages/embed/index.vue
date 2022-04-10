@@ -63,7 +63,7 @@ export default {
     return {
       currentItem: 0,
       betweenAds: 3,
-      cardDuration: 10000,
+      cardDuration: 20000,
       contentHack: [],
     }
   },
