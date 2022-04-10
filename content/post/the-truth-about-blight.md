@@ -9,4 +9,4 @@ liked_by: ""
 ---
 Curing the infected and healing the casualties are two of the primary uses of crystals. The first way to use crystals for this purpose is to place them on or around the person who is ill or injured. The second way is to hold the crystal in your hand and direct its energy toward the person in need.
 
-In this article I will\[...]
+In this article I will \[...]
