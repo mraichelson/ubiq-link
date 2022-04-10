@@ -2,12 +2,17 @@
   <div class="bg-gradient-to-br from-slate-50 to-slate-200">
     <ubiq-header />
     <div class="max-w-[600px] mx-auto space-y-4 py-4">
-      <card-crew />
-      <card-lifelines />
-      <card-post />
-      <card-comment />
-      <card-share />
-      <card-ad />
+      <template v-for="(item, index) in content">
+        <div>index {{ index }} is a {{ item.type }}</div>
+        <card-crew v-if="item.type === 'crew'" :content="item" />
+        <card-lifeline v-else-if="item.type === 'lifeline'" :content="item" />
+        <card-post v-else-if="item.type === 'post'" :content="item" />
+        <card-comment v-else-if="item.type === 'comment'" :content="item" />
+        <card-share v-else :content="item" />
+        <template v-if="index % 3 == 0">
+          <card-ad />
+        </template>
+      </template>
     </div>
     <footer
       class="text-xs text-center border-t border-slate-400 p-4 text-slate-500 bg-slate-100 leading-6"
@@ -66,8 +71,9 @@
 </template>
 
 <script>
+import { mapState, mapActions } from 'vuex'
 export default {
-  name: 'IndexPage',
+  name: 'HomePage',
   head() {
     return {
       title: 'UBIQ | Your feed',
@@ -75,6 +81,9 @@ export default {
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
       ],
     }
+  },
+  computed: {
+    ...mapState('content', ['content']),
   },
   mounted() {
     if (window.netlifyIdentity) {

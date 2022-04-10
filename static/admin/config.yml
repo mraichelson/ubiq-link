@@ -6,6 +6,24 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: 'person'
+    label: 'Person'
+    folder: 'content/person'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - {
+          label: 'Screen name',
+          name: 'title',
+          widget: 'string',
+          required: true,
+        }
+      - { label: 'Avatar', name: 'image', widget: 'image', required: true }
+      - { label: 'Enclave', name: 'enclave', widget: 'string' }
+      - { label: 'Dead?', name: 'dead', widget: 'boolean', default: false }
   - name: 'post'
     label: 'Post'
     folder: 'content/post'
@@ -15,8 +33,48 @@ collections:
     editor:
       preview: false
     fields:
+      - {
+          label: 'Author',
+          name: 'author',
+          widget: 'relation',
+          collection: 'person',
+          search_fields: ['title'],
+          value_field: 'title',
+          display_fields: ['title'],
+        }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Upvotes',
+          name: 'upvotes',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
+      - {
+          label: 'Downvotes',
+          name: 'downvotes',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
+      - {
+          label: 'Comments',
+          name: 'comments',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
+      - {
+          label: 'Liked by',
+          name: 'liked_by',
+          widget: 'relation',
+          collection: 'person',
+          search_fields: ['title'],
+          value_field: 'title',
+          display_fields: ['title'],
+          required: false,
+        }
   - name: 'comment'
     label: 'Comment'
     folder: 'content/comment'
@@ -26,8 +84,40 @@ collections:
     editor:
       preview: false
     fields:
+      - {
+          label: 'Author',
+          name: 'author',
+          widget: 'relation',
+          collection: 'person',
+          search_fields: ['title'],
+          value_field: 'title',
+          display_fields: ['title'],
+        }
+      - { label: 'Replying to author', name: 'reply_author', widget: 'string' }
+      - { label: 'Replying to topic', name: 'reply_title', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Upvotes',
+          name: 'upvotes',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
+      - {
+          label: 'Downvotes',
+          name: 'downvotes',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
+      - {
+          label: 'Comments',
+          name: 'comments',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
   - name: 'share'
     label: 'Share'
     folder: 'content/share'
@@ -37,10 +127,48 @@ collections:
     editor:
       preview: false
     fields:
+      - {
+          label: 'Author',
+          name: 'author',
+          widget: 'relation',
+          collection: 'person',
+          search_fields: ['title'],
+          value_field: 'title',
+          display_fields: ['title'],
+        }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Shared item image',
+          name: 'share_image',
+          widget: 'image',
+          required: true,
+        }
+      - { label: 'Shared item title', name: 'share_title', widget: 'string' }
+      - { label: 'Shared item body', name: 'share_body', widget: 'markdown' }
+      - {
+          label: 'Upvotes',
+          name: 'upvotes',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
+      - {
+          label: 'Downvotes',
+          name: 'downvotes',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
+      - {
+          label: 'Comments',
+          name: 'comments',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
   - name: 'lifelines'
-    label: 'Lifelines'
+    label: 'Lifelines Job'
     folder: 'content/lifelines'
     format: 'frontmatter'
     create: true
@@ -48,8 +176,79 @@ collections:
     editor:
       preview: false
     fields:
+      - {
+          label: 'Author',
+          name: 'author',
+          widget: 'relation',
+          collection: 'person',
+          search_fields: ['title'],
+          value_field: 'title',
+          display_fields: ['title'],
+        }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Upvotes',
+          name: 'upvotes',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
+      - {
+          label: 'Downvotes',
+          name: 'downvotes',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
+      - {
+          label: 'Comments',
+          name: 'comments',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
+  - name: 'crew'
+    label: 'Lifelines Crew'
+    folder: 'content/crews'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - {
+          label: 'Author',
+          name: 'author',
+          widget: 'relation',
+          collection: 'person',
+          search_fields: ['title'],
+          value_field: 'title',
+          display_fields: ['title'],
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Upvotes',
+          name: 'upvotes',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
+      - {
+          label: 'Downvotes',
+          name: 'downvotes',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
+      - {
+          label: 'Comments',
+          name: 'comments',
+          widget: 'number',
+          default: 4,
+          value_type: 'int',
+        }
   - name: 'ad'
     label: 'Ad'
     folder: 'content/ad'
@@ -59,5 +258,7 @@ collections:
     editor:
       preview: false
     fields:
+      - { label: 'Image', name: 'image', widget: 'image', required: true }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Advertiser', name: 'advertiser', widget: 'string' }

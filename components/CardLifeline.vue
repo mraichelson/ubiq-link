@@ -2,7 +2,7 @@
   <div
     class="rounded p-2 bg-gradient-to-br from-red-600 to-red-800 border border-red-700 space-y-2 max-w-[600px]"
   >
-    <div class="flex items-center gap-2 text-white">
+    <div class="flex items-center gap-4 text-white">
       <img
         src="/img/tmp-user.jpg"
         alt=""
@@ -97,4 +97,51 @@
     </div>
   </div>
 </template>
-<script></script>
+<script>
+import { mapState } from 'vuex'
+
+export default {
+  props: {
+    content: {
+      type: Object,
+      required: true,
+    },
+  },
+  computed: {
+    ...mapState('people', ['people']),
+    title() {
+      return this.$props.content.title
+    },
+    body() {
+      return this.$props.content
+    },
+    upvotes() {
+      return this.$props.content.upvotes
+    },
+    downvotes() {
+      return this.$props.content.downvotes
+    },
+    comments() {
+      return this.$props.content.comments
+    },
+    personName() {
+      const user = this.people.filter(
+        (person) => person.title === this.$props.content.author
+      )
+      return user[0].title
+    },
+    personImage() {
+      const user = this.people.filter(
+        (person) => person.title === this.$props.content.author
+      )
+      return user[0].image
+    },
+    personLocation() {
+      const user = this.people.filter(
+        (person) => person.title === this.$props.content.author
+      )
+      return user[0].enclave
+    },
+  },
+}
+</script>

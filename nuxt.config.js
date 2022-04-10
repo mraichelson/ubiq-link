@@ -1,10 +1,11 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  modern: process.env.NODE_ENV === 'production' ? 'client' : false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'ubiq-link',
+    title: 'UBIQ.LINK',
     htmlAttrs: {
       lang: 'en',
     },
@@ -15,6 +16,10 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  },
+
+  router: {
+    trailingSlash: true,
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -40,7 +45,9 @@ export default {
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  content: {
+    liveEdit: false,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

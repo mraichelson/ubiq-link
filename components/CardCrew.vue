@@ -2,15 +2,15 @@
   <div
     class="rounded p-2 bg-gradient-to-br from-blue-600 to-blue-800 border border-blue-700 space-y-2 max-w-[600px]"
   >
-    <div class="flex items-center gap-2 text-white">
+    <div class="flex items-center gap-4 text-white">
       <img
-        src="/img/tmp-user.jpg"
+        :src="personImage"
         alt=""
         width="32"
         height="32"
         class="h-12 w-12 object-cover rounded-full border border-blue-700"
       />
-      <div class="text-lg">TRav--ElevationOK</div>
+      <div class="text-lg">{{ personName }}</div>
       <div class="ml-auto uppercase text-xs">
         Lifelines: Crew
         <svg
@@ -28,12 +28,8 @@
       </div>
     </div>
     <div class="p-2 bg-blue-100 -mx-2 space-y-2 text-slate-600">
-      <div class="text-xl">The Cowboys</div>
-      <p>
-        Available immediately for transport and scouting contracts. Have other
-        needs? We're the right crew for the job.
-      </p>
-      <p>We have our own transportation!</p>
+      <div class="text-xl">{{ title }}</div>
+      <nuxt-content class="space-y-2" :document="body" />
     </div>
     <div class="flex text-xs text-blue-50 gap-4">
       <div class="flex gap-1 items-center">
@@ -47,7 +43,7 @@
             d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"
           />
         </svg>
-        12
+        {{ upvotes }}
       </div>
       <div class="flex gap-1 items-center">
         <svg
@@ -60,7 +56,7 @@
             d="M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z"
           />
         </svg>
-        6
+        {{ downvotes }}
       </div>
       <div class="flex gap-1 items-center">
         <svg
@@ -77,7 +73,7 @@
             d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
           />
         </svg>
-        8
+        {{ comments }}
       </div>
       <div class="text-xs flex items-center gap-1 ml-auto">
         <svg
@@ -92,9 +88,56 @@
             clip-rule="evenodd"
           />
         </svg>
-        <div>Elevation (Oklahoma)</div>
+        <div>{{ personLocation }}</div>
       </div>
     </div>
   </div>
 </template>
-<script></script>
+<script>
+import { mapState } from 'vuex'
+
+export default {
+  props: {
+    content: {
+      type: Object,
+      required: true,
+    },
+  },
+  computed: {
+    ...mapState('people', ['people']),
+    title() {
+      return this.$props.content.title
+    },
+    body() {
+      return this.$props.content
+    },
+    upvotes() {
+      return this.$props.content.upvotes
+    },
+    downvotes() {
+      return this.$props.content.downvotes
+    },
+    comments() {
+      return this.$props.content.comments
+    },
+    personName() {
+      const user = this.people.filter(
+        (person) => person.title === this.$props.content.author
+      )
+      return user[0].title
+    },
+    personImage() {
+      const user = this.people.filter(
+        (person) => person.title === this.$props.content.author
+      )
+      return user[0].image
+    },
+    personLocation() {
+      const user = this.people.filter(
+        (person) => person.title === this.$props.content.author
+      )
+      return user[0].enclave
+    },
+  },
+}
+</script>

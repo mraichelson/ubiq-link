@@ -1,6 +1,6 @@
 <template>
   <header
-    class="p-2 bg-gradient-to-br from-indigo-500 to-indigo-700 sticky top-0"
+    class="p-2 bg-gradient-to-br from-indigo-500 to-indigo-700 sticky top-0 z-10"
   >
     <div class="mx-auto max-w-[600px] text-white flex items-center gap-2">
       <svg
