@@ -15,6 +15,10 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
+    script: [
+      // <script defer data-domain="ubiq.link" src="https://plausible.io/js/plausible.js"></script>
+      { src },
+    ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
@@ -42,11 +46,17 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'vue-plausible',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
     liveEdit: false,
+  },
+
+  // Plausible analytics config
+  plausible: {
+    domain: 'ubiq.link',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
