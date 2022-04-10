@@ -15,10 +15,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    script: [
-      // <script defer data-domain="ubiq.link" src="https://plausible.io/js/plausible.js"></script>
-      { src },
-    ],
+    script: [],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
