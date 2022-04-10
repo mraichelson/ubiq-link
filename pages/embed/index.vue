@@ -38,10 +38,10 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  name: 'HomePage',
+  name: 'ObsEmbed',
   head() {
     return {
-      title: 'UBIQ | Your feed',
+      title: 'UBIQ feed OBS embed',
       script: [
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
       ],
