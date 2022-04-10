@@ -4,36 +4,32 @@
   >
     <div class="flex items-center gap-4 text-slate-500">
       <img
-        src="/img/tmp-user.jpg"
+        :src="personImage"
         alt=""
         width="32"
         height="32"
         class="h-12 w-12 object-cover rounded-full border border-slate-500"
       />
-      <div class="text-lg">ivan-u4ia</div>
+      <div class="text-lg">{{ personName }}</div>
     </div>
     <div class="border-t p-2 border-slate-200 -mx-2 space-y-2 text-slate-600">
-      <div class="text-xl">I 🤬 told you!</div>
-      <p>
-        I told you, I know what I saw and so do other people. It's real, man,
-        and the rest of you are jerks for not listening to me sooner.
-      </p>
+      <div class="text-xl">{{ title }}</div>
+      <nuxt-content class="space-y-2" :document="body" />
     </div>
     <div
       class="rounded overflow-hidden border border-slate-400 bg-slate-200 text-slate-600"
     >
       <img
         class="block aspect-[2/1]"
-        src="https://i.picsum.photos/id/1040/600/300.jpg?hmac=OpzuPwLDjpLe_pSNeFi___-s8FkPg0QWQ-4MpqPepQs"
+        :src="shareImage"
         width="600"
         height="300"
       />
       <div class="px-2 py-1 font-semibold">
-        Undeniable proof that the Bigfoot Abberant is real!
+        {{ shareTitle }}
       </div>
       <div class="px-2 pt-0 pb-2 text-sm">
-        Yeah, you all said I'd been taking too much stimsauce. Well buckle up,
-        motherfuckers, I've got receipts!
+        {{ shareBody }}
       </div>
     </div>
     <div
@@ -50,7 +46,7 @@
             d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"
           />
         </svg>
-        123
+        {{ upvotes }}
       </div>
       <div class="flex gap-1 items-center">
         <svg
@@ -63,7 +59,7 @@
             d="M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z"
           />
         </svg>
-        456
+        {{ downvotes }}
       </div>
       <div class="flex gap-1 items-center">
         <svg
@@ -80,7 +76,7 @@
             d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
           />
         </svg>
-        75
+        {{ comments }}
       </div>
       <div class="text-xs text-slate-400 flex items-center gap-1 ml-auto">
         <svg
@@ -95,7 +91,7 @@
             clip-rule="evenodd"
           />
         </svg>
-        <div>Euphoria (Oklahoma)</div>
+        <div>{{ personLocation }}</div>
       </div>
     </div>
   </div>
@@ -126,6 +122,15 @@ export default {
     },
     comments() {
       return this.$props.content.comments
+    },
+    shareImage() {
+      return this.$props.content.share_image
+    },
+    shareTitle() {
+      return this.$props.content.share_title
+    },
+    shareBody() {
+      return this.$props.content.share_body
     },
     personName() {
       const user = this.people.filter(
