@@ -30,7 +30,6 @@ export const actions = {
       share.type = 'share'
       content.push(share)
     })
-    content.sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1))
     commit('content/addContent', content)
 
     /**

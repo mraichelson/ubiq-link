@@ -2,7 +2,7 @@
   <div class="bg-gradient-to-br from-slate-50 to-slate-200">
     <ubiq-header />
     <div class="max-w-[600px] mx-auto space-y-4 py-4">
-      <template v-for="(item, index) in content">
+      <template v-for="(item, index) in sortedContent">
         <card-crew v-if="item.type === 'crew'" :content="item" />
         <card-lifeline v-else-if="item.type === 'lifeline'" :content="item" />
         <card-post v-else-if="item.type === 'post'" :content="item" />
@@ -83,6 +83,10 @@ export default {
   },
   computed: {
     ...mapState('content', ['content']),
+    sortedContent() {
+      const tmpContent = this.content
+      return tmpContent.sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1))
+    },
   },
   mounted() {
     if (window.netlifyIdentity) {
