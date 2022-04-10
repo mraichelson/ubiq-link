@@ -42,9 +42,6 @@ export default {
   head() {
     return {
       title: 'UBIQ feed OBS embed',
-      script: [
-        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
-      ],
     }
   },
   computed: {
