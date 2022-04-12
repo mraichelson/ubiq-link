@@ -12,4 +12,4 @@ upvotes: 73
 downvotes: 2
 comments: 11
 ---
-I know some folks that were out there when this went down. Feeling lucky I was not one of them.
+I know some folks that were on-premises when this went down. Feeling lucky I was not one of them.
