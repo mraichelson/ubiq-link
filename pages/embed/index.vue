@@ -3,31 +3,34 @@
     <template v-if="item" mode="out-in">
       <transition name="card-swap">
         <card-crew
-          class="w-[600px] right-0 bottom-0 absolute"
+          class="w-[600px] absolute left-[50%] top-[50%] translate-x-[-300px] translate-y-[-50%]"
           v-if="item.type === 'crew'"
           :content="item"
         />
         <card-lifeline
-          class="w-[600px] right-0 bottom-0 absolute"
+          class="w-[600px] absolute left-[50%] top-[50%] translate-x-[-300px] translate-y-[-50%]"
           v-else-if="item.type === 'lifeline'"
           :content="item"
         />
         <card-post
-          class="w-[600px] right-0 bottom-0 absolute"
+          class="w-[600px] absolute left-[50%] top-[50%] translate-x-[-300px] translate-y-[-50%]"
           v-else-if="item.type === 'post'"
           :content="item"
         />
         <card-comment
-          class="w-[600px] right-0 bottom-0 absolute"
+          class="w-[600px] absolute left-[50%] top-[50%] translate-x-[-300px] translate-y-[-50%]"
           v-else-if="item.type === 'comment'"
           :content="item"
         />
         <card-share
-          class="w-[600px] right-0 bottom-0 absolute"
+          class="w-[600px] absolute left-[50%] top-[50%] translate-x-[-300px] translate-y-[-50%]"
           v-else-if="item.type === 'share'"
           :content="item"
         />
-        <card-ad class="w-[600px] right-0 bottom-0 absolute" v-else />
+        <card-ad
+          class="w-[600px] absolute left-[50%] top-[50%] translate-x-[-300px] translate-y-[-50%]"
+          v-else
+        />
       </transition>
     </template>
   </div>
