@@ -10,4 +10,4 @@ comments: 0
 ---
 It means what it says. *The Canadians* make oddly convenient scapegoats to bomb something of no use to them.
 
-Buddy. (Read: Asshole)
+Pal. (Read: Asshole)
