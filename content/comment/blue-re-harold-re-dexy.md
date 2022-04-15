@@ -8,6 +8,6 @@ upvotes: 47
 downvotes: 1
 comments: 0
 ---
-It means what it says. The Canadians make oddly convenient scapegoats to bomb something of no use to them.
+It means what it says. *The Canadians* make oddly convenient scapegoats to bomb something of no use to them.
 
 (Asshole)
