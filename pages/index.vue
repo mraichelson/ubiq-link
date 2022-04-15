@@ -2,15 +2,13 @@
   <div class="bg-gradient-to-br from-slate-50 to-slate-200">
     <ubiq-header />
     <div class="max-w-[600px] mx-auto space-y-4 p-4">
-      <template v-for="(item, index) in content">
+      <template v-for="(item, index) in contentHack">
         <card-crew v-if="item.type === 'crew'" :content="item" />
         <card-lifeline v-else-if="item.type === 'lifeline'" :content="item" />
         <card-post v-else-if="item.type === 'post'" :content="item" />
         <card-comment v-else-if="item.type === 'comment'" :content="item" />
-        <card-share v-else :content="item" />
-        <template v-if="index % 3 == 0">
-          <card-ad />
-        </template>
+        <card-share v-else-if="item.type === 'share'" :content="item" />
+        <card-ad v-else />
       </template>
     </div>
     <global-footer />
@@ -29,6 +27,13 @@ export default {
       ],
     }
   },
+  data() {
+    return {
+      currentItem: 0,
+      betweenAds: 3,
+      contentHack: [],
+    }
+  },
   computed: {
     ...mapState('content', ['content']),
   },
@@ -42,6 +47,13 @@ export default {
         }
       })
     }
+    this.content.forEach((item, index) => {
+      this.contentHack.push(item)
+      if (index % this.betweenAds === 0) {
+        this.contentHack.push({ type: 'ad' })
+      }
+    })
   },
+  methods: {},
 }
 </script>
