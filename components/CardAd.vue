@@ -2,7 +2,13 @@
   <div
     class="rounded overflow-hidden bg-slate-50 text-slate-600 border border-purple-400 space-y-2 max-w-[600px]"
   >
-    <img :src="image" alt="" width="600" height="300" class="aspect-[2/1]" />
+    <img
+      :src="image"
+      alt=""
+      width="600"
+      height="300"
+      class="aspect-[2/1] object-cover"
+    />
     <div class="p-2 space-y-2">
       <div class="text-xl">{{ title }}</div>
       <nuxt-content class="space-y-2" :document="body" />

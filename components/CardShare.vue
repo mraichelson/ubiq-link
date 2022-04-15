@@ -20,7 +20,7 @@
       class="rounded overflow-hidden border border-slate-400 bg-slate-200 text-slate-600"
     >
       <img
-        class="block aspect-[2/1]"
+        class="block aspect-[2/1] object-cover"
         :src="shareImage"
         width="600"
         height="300"
