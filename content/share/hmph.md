@@ -12,4 +12,4 @@ upvotes: 91
 downvotes: 32
 comments: 57
 ---
-What happened in Boston was a tragedy for sure whoever's responsible. But does anybody else get serious Hunter2.0 vibes off this guy?
+What happened in Boston was a tragedy for sure (whoever's responsible). But does anybody else get serious Hunter2.0 vibes off this guy?
