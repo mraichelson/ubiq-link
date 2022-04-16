@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-screen relative">
-    <template v-if="item" mode="out-in">
-      <transition name="card-swap">
+    <template v-if="item">
+      <transition name="card-swap" mode="out-in">
         <card-crew
           class="w-[600px] absolute left-[50%] bottom-0 translate-x-[-300px]"
           v-if="item.type === 'crew'"
@@ -57,13 +57,13 @@ export default {
         this.contentHack.push({ type: 'ad' })
       }
     })
-    const cycle = setInterval(this.cycleCards, this.cardDuration)
+    const cycle = setInterval(this.cycleCards, this.cardDuration * 1000)
   },
   data() {
     return {
       currentItem: 0,
       betweenAds: 3,
-      cardDuration: 20000,
+      cardDuration: 20,
       contentHack: [],
     }
   },
