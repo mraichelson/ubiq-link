@@ -5,5 +5,5 @@ title: Jar of Meat
 advertiser: TheMauveHand of Titan
 ---
 When you're on a leg and feelin' beat
-Here's a little thing you could eat
+Here's a thing that you could eat
 Try your luck with a Jar of meat!
