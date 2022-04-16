@@ -1,7 +1,7 @@
 ---
 sorting: 2022-04-16T19:37:41.814Z
 image: /img/pexels-ekaterina-bolovtsova-5662352.jpg
-title: Jar of Meat
+title: Jar of Meat. It's a Choice!
 advertiser: TheMauveHand of Titan
 ---
 When you're on a leg and feelin' beat
