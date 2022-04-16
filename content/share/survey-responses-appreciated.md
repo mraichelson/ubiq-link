@@ -5,7 +5,7 @@ title: Survey responses appreciated
 share_image: /img/pexels-lukas-590022.jpg
 share_title: Take the survey!
 share_body: Fill out the survey by KStone-UMass-Comms. Do not submit passwords
-  or other sensitive information through a Ubiq-survey.
+  or other sensitive information through Ubiq-surveys.
 upvotes: 4
 downvotes: 113
 comments: 13
