@@ -3,37 +3,37 @@
     <template v-if="item">
       <transition name="card-swap" mode="out-in">
         <card-crew
-          class="w-[600px] absolute left-[50%] bottom-0 translate-x-[-300px]"
+          class="w-[600px] absolute left-[50%] translate-x-[-300px] top-1/2 translate-y-[-50%]"
           v-if="item.type === 'crew'"
           :content="item"
           :key="`crew-${item.slug}`"
         />
         <card-lifeline
-          class="w-[600px] absolute left-[50%] bottom-0 translate-x-[-300px]"
+          class="w-[600px] absolute left-[50%] translate-x-[-300px] top-1/2 translate-y-[-50%]"
           v-else-if="item.type === 'lifeline'"
           :content="item"
           :key="`lifeline-${item.slug}`"
         />
         <card-post
-          class="w-[600px] absolute left-[50%] bottom-0 translate-x-[-300px]"
+          class="w-[600px] absolute left-[50%] translate-x-[-300px] top-1/2 translate-y-[-50%]"
           v-else-if="item.type === 'post'"
           :content="item"
           :key="`post-${item.slug}`"
         />
         <card-comment
-          class="w-[600px] absolute left-[50%] bottom-0 translate-x-[-300px]"
+          class="w-[600px] absolute left-[50%] translate-x-[-300px] top-1/2 translate-y-[-50%]"
           v-else-if="item.type === 'comment'"
           :content="item"
           :key="`comment-${item.slug}`"
         />
         <card-share
-          class="w-[600px] absolute left-[50%] bottom-0 translate-x-[-300px]"
+          class="w-[600px] absolute left-[50%] translate-x-[-300px] top-1/2 translate-y-[-50%]"
           v-else-if="item.type === 'share'"
           :content="item"
           :key="`share-${item.slug}`"
         />
         <card-ad
-          class="w-[600px] absolute left-[50%] bottom-0 translate-x-[-300px]"
+          class="w-[600px] absolute left-[50%] translate-x-[-300px] top-1/2 translate-y-[-50%]"
           :key="`ad-${item.slug}`"
           v-else
         />
