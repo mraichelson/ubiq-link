@@ -68,8 +68,8 @@ export default {
   data() {
     return {
       currentItem: 0,
-      betweenAds: 3,
-      cardDuration: 20,
+      betweenAds: 4,
+      cardDuration: 19,
       contentHack: [],
     }
   },
