@@ -8,4 +8,4 @@ upvotes: 47
 downvotes: 1
 comments: 0
 ---
-It means what it says. *The Canadians* make oddly convenient scapegoats to bomb something of no use to them, pal.
+It means what it says. "*ThE cAnAdIaNs™"* make oddly convenient scapegoats to bomb something of no use to them, pal.
