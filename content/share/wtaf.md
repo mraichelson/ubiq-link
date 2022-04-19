@@ -5,7 +5,7 @@ title: WTAF
 share_image: /img/pie.jpg
 share_title: The food delivery scam that's sweeping the Loss
 share_body: People all over the Loss are getting caught by this scam. Learn how
-  to recognize and \*\*avoid\*\* it.
+  to recognize and AVOID it.
 upvotes: 13
 downvotes: 3
 comments: 7
