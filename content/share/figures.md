@@ -1,7 +1,7 @@
 ---
 sorting: 2022-05-14T15:46:22.463Z
 author: tastes-like-burning
-title: Yeah, that tracks
+title: Yeah, that tracks 🖕
 share_image: /img/wortham-with-flag.jpeg
 share_title: Sen. Wortham Praises DHQS Smuggling Operation Bust
 share_body: In a press conference on Thursday Sen. Wortham (R-Mass.) praised the
