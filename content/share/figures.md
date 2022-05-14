@@ -1,7 +1,7 @@
 ---
 sorting: 2022-05-14T15:46:22.463Z
 author: tastes-like-burning
-title: Figures
+title: Yeah, that tracks
 share_image: /img/wortham-with-flag.jpeg
 share_title: Sen. Wortham Praises DHQS Smuggling Operation Bust
 share_body: In a press conference on Thursday Sen. Wortham (R-Mass.) praised the
@@ -15,4 +15,4 @@ upvotes: 31
 downvotes: 2
 comments: 14
 ---
-I'd pay good bounty to not have this person guy in my feed for 24 hours.
+I'd pay good bounty to not have this guy in my feed for 24 hours.
