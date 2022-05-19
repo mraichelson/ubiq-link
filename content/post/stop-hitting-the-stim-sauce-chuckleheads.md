@@ -4,7 +4,7 @@ author: Harold_Carmichael-ESQ
 title: Stop hitting the stim-sauce chuckleheads
 upvotes: 17
 downvotes: 15
-comments: -6
+comments: 6
 liked_by: vazquezeelev
 ---
 The bigfoot abberant does not exist. SHUT UP ABOUT IT ALREADY!
