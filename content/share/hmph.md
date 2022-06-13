@@ -4,7 +4,7 @@ author: DMR94205
 title: Hmph...
 share_image: /img/iu.jpeg
 share_title: The Man Who Could be King
-share_body: In the wake to the terrorist attacks in Boston, Massachusetts
+share_body: In the wake of the terrorist attacks in Boston, Massachusetts
   senator Frank Wortham has become something of a media darling. Taking center
   stage with his fiery rhetoric that some say shines a light on a path to the
   White House.
